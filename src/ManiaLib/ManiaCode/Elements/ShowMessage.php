@@ -13,16 +13,19 @@ class ShowMessage extends Node
     public function __construct()
     {
         $this->message = Node::create()
-            ->setNodeName('message');
+            ->setNodeName('message')
+            ->appendTo($this);
     }
 
     public function setMessage($message)
     {
-        return $this->message->setNodeValue($message);
+         $this->message->setNodeValue($message);
+         return $this;
     }
 
     public function getMessage()
     {
-        return $this->message->getNodeValue();
+        $this->message->getNodeValue();
+        return $this;
     }
 }
