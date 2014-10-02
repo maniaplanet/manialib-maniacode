@@ -1,0 +1,29 @@
+{
+    "name": "maniaplanet/manialib-maniacode",
+    "type": "library",
+    "description": "Object-oriented PHP library for writing ManiaCode.",
+    "keywords": ["ManiaPlanet", "ShootMania", "TrackMania", "XML", "Manialink"],
+    "license": "MIT",
+    "homepage": "https://github.com/maniaplanet/manialib-maniacode",
+    "authors": [
+        {
+            "name": "Nadeo",
+            "email": "contact@nadeo.com",
+            "homepage": "http://www.nadeo.com/"
+        }
+    ],
+    "support": {
+        "forum": "http://forum.maniaplanet.com/viewforum.php?f=40"
+    },
+    "require": {
+        "maniaplanet/manialib-xml": "0.2.*@dev"
+    },
+    "autoload": {
+        "psr-4": {"ManiaLib\\": "src/ManiaLib/"}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
